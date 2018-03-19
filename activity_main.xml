@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.win7.extrycatch.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="被除數 :"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/edtX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtX"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/txtY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="除數 :"
+            android:layout_below="@+id/edtX"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/edtY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtY"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/edtY"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/btnDo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtResult"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:text="計算" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
